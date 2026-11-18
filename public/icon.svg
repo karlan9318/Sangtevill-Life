@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <!-- Apartment Building Silhouette -->
+  <g fill="#ffffff">
+    <rect x="136" y="136" width="128" height="252" rx="14" />
+    <rect x="280" y="196" width="96" height="192" rx="12" fill="#dbeafe" />
+    <!-- Windows Left Tower -->
+    <rect x="160" y="168" width="28" height="28" rx="5" fill="#1e3a8a" />
+    <rect x="212" y="168" width="28" height="28" rx="5" fill="#1e3a8a" />
+    <rect x="160" y="216" width="28" height="28" rx="5" fill="#1e3a8a" />
+    <rect x="212" y="216" width="28" height="28" rx="5" fill="#1e3a8a" />
+    <rect x="160" y="264" width="28" height="28" rx="5" fill="#1e3a8a" />
+    <rect x="212" y="264" width="28" height="28" rx="5" fill="#1e3a8a" />
+    <rect x="182" y="328" width="36" height="60" rx="6" fill="#2563eb" />
+    <!-- Windows Right Tower -->
+    <rect x="304" y="224" width="20" height="24" rx="4" fill="#1e3a8a" />
+    <rect x="334" y="224" width="20" height="24" rx="4" fill="#1e3a8a" />
+    <rect x="304" y="264" width="20" height="24" rx="4" fill="#1e3a8a" />
+    <rect x="334" y="264" width="20" height="24" rx="4" fill="#1e3a8a" />
+    <rect x="304" y="304" width="20" height="24" rx="4" fill="#1e3a8a" />
+    <rect x="334" y="304" width="20" height="24" rx="4" fill="#1e3a8a" />
+  </g>
+</svg>

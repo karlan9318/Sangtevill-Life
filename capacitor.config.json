@@ -1,0 +1,20 @@
+{
+  "appId": "kr.santeville.life",
+  "appName": "상떼빌라이프",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "backgroundColor": "#1e3a8a",
+      "showSpinner": false
+    }
+  }
+}

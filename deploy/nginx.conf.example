@@ -1,0 +1,31 @@
+# 동작상떼빌 아파트 상떼빌라이프 Nginx HTTPS 리버스 프록시 설정 예시
+# 주의: 모바일 PWA 앱 설치(Android/iOS) 및 현장 카메라 촬영 기능은 HTTPS 도메인 연결이 필수입니다.
+
+server {
+    listen 80;
+    server_name santeville.example.kr;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl http2;
+    server_name santeville.example.kr;
+
+    # Let's Encrypt Certbot 인증서 경로 예시
+    ssl_certificate /etc/letsencrypt/live/santeville.example.kr/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/santeville.example.kr/privkey.pem;
+
+    client_max_body_size 20M;
+
+    location / {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_cache_bypass $http_upgrade;
+    }
+}

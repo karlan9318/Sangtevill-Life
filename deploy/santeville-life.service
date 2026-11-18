@@ -1,0 +1,22 @@
+[Unit]
+Description=Santeville Life Apartment Community & Backoffice Server
+Documentation=https://github.com/
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/santeville-life
+EnvironmentFile=/opt/santeville-life/.env
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node /opt/santeville-life/server.ts
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=santeville-life
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,6 @@
+{
+  "name": "아파트너스 - 스마트 입주민 커뮤니티 & 관리사무소 백오피스",
+  "description": "동호수 기반 입주민 인증, 전자투표(세대 중복방지), 카톡형 단지채팅, 직무별(동대표/선관위/자문위원) 게시판 및 관리사무소 백오피스 통합 플랫폼",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
